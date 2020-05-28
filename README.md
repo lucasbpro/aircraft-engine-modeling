@@ -1,6 +1,6 @@
 # Aircraft Engine Modeling
 
-This project models the steady-state behavior of three different types of aircraft engines: turbojet, turbofan and ramjet. It allows the study of their performance at different operating conditions.
+This project models the steady-state behavior of three different types of aircraft engines: [turbofan](https://en.wikipedia.org/wiki/Turbofan), [turbojet](https://en.wikipedia.org/wiki/Turbojet) and [ramjet](https://en.wikipedia.org/wiki/Ramjet). It allows the study of their performance at different operating conditions.
 
 ### Params files
 
