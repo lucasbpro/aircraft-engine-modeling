@@ -4,10 +4,10 @@ option = input(['Choose the type of engine (default=turbojet):\n(1)turbojet' ...
         '\n(2)turbofan\n(3)ramjet\n']);
 
 switch(option)
-    case {'2'}
+    case {'2','turbofan'}
         type = 'turbofan';  
         params = turbofan();
-    case {'3'}
+    case {'3','ramjet'}
         type = 'ramjet';
         params = ramjet();
     otherwise
@@ -18,14 +18,13 @@ end
 %% Operating Conditions
 % assuming aircraft at an altitude of 18300 meters:
 
-disp('Input the operating conditions:');
-mach = input('Mach number:');
-altitude = input('Altitude (meters):');
+altitude = input(['Choose the type of engine (default=turbojet):\n(1)turbojet' ...
+        '\n(2)turbofan\n(3)ramjet\n']);
 
-[~, temperature, pressure] = atmosferaISA(altitude);
-op.M = mach;             % mach number 
-op.Pa = pressure/1000;   % ambient pression (kPa)
-op.Ta = temperature;     % ambient temperature (K)
+[rho, T, p] = atmosferaISA(altitude)
+op.M = 3.0;         % mach number 
+op.Pa = 7.15808;    % ambient pression (kPa)
+op.Ta = 216.650;    % ambient temperature (K)
 
 %% Simulation
 engine(type, params, op)

@@ -6,14 +6,9 @@ function OUT = engine(type, params, op)
 % turbofan, turbojet and ramjet
 %
 % Inputs: 
-%       type =  string which provides engine type (turbofan, turbojet, ramjet)
-%
-%       params = struct containing engine parameters
-%
-%       op = operating conditions, which shall contain
-%               op.M  ---> mach number
-%               op.Pa ---> ambient pressure
-%               op.Ta ---> ambient temperature
+%           type =  engine type (turbofan, turbojet, ramjet)
+%           params = engine parameters
+%           op = opeonto de operacao do motor   
 
 %%
 
