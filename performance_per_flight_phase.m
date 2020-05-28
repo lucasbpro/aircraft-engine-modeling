@@ -70,3 +70,5 @@ set(gca, 'XTick', 1:3, 'XTickLabel', xlabels);
 ylabel('Specific Thrust - ^{kN.s}/_{kg}');
 legend('Turbojet','Turbofan'); 
 grid on; 
+
+saveas(gcf,'./img/performance_per_flight_phase.png')
