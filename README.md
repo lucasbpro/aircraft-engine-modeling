@@ -2,11 +2,15 @@
 
 This project models the steady-state behavior of three different types of aircraft engines: turbojet, turbofan and ramjet. It allows the study of their performance at different operating conditions.
 
-## Params files
+### Params files
 
 The files named *turbofan.m*, *turbojet.m* and *ramjet.m* contain functions which return the parameters of theses engines (there are geometric and physical parameters). 
 
-## Scripts
+### engine.m
+
+This implements a thermodynamic model for three different aeronautical engines: turbofan, turbojet and ramjet. It models the *steady-state* behavior of the engine.
+
+### Scripts
 
 The following files are Matlab scripts which can be run independently:
 
