@@ -2,6 +2,10 @@
 
 This project models the steady-state behavior of three different types of aircraft engines: [turbofan](https://en.wikipedia.org/wiki/Turbofan), [turbojet](https://en.wikipedia.org/wiki/Turbojet) and [ramjet](https://en.wikipedia.org/wiki/Ramjet). It allows the study of their performance at different operating conditions.
 
+The steady-state behavior is modeled by thermo-dynamic equations which provide, for example, the temperature and pressure observed in each stage of the engine. As the stages may vary depending on the engine type, there are different sequences of transformations for each type of engine. The figure below was copied from the class notes of Prof. [Pedro Lacava](http://www.aer.ita.br/conteudo/professor-pedro-teixeira-lacava) from Instituto Tecnológico de Aeronáutica (ITA).
+
+<img src="./img/model_equations.png" width="500">
+
 ### Params files
 
 The files named *turbofan.m*, *turbojet.m* and *ramjet.m* contain functions which return the parameters of theses engines (there are geometric and physical parameters). 

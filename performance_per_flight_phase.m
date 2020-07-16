@@ -59,7 +59,7 @@ xlabels = {'Takeoff','Climb','Cruise'};
 set(gca, 'XTick', 1:3, 'XTickLabel', xlabels);
 ylabel('TSFC in ^{kg}/_{kN.s}');
 title('Performance comparison per flight phase'); 
-legend('Turbojet','Turbofan'); 
+legend('Turbojet','Turbofan','Location','SouthEast'); 
 grid on;
 
 subplot(2,1,2); 
@@ -68,7 +68,7 @@ bar([1 2 3],[[turbojet_Takeoff.T_ma turbojet_Climb.T_ma turbojet_Cruise.T_ma]' .
 xlabels = {'Takeoff','Climb','Cruise'};
 set(gca, 'XTick', 1:3, 'XTickLabel', xlabels);
 ylabel('Specific Thrust - ^{kN.s}/_{kg}');
-legend('Turbojet','Turbofan'); 
+legend('Turbojet','Turbofan','Location','SouthEast'); 
 grid on; 
 
 saveas(gcf,'./img/performance_per_flight_phase.png')

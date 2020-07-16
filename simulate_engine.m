@@ -8,7 +8,7 @@ switch(option)
         type = 'turbofan';  
         params = turbofan();
     case {'3'}
-        type = 'ramjet';
+        type = 'ramjet';C:\Users\Lucas\Documents\1. Formação\Mestrado\1. Material de Estudo\Exercício - KF
         params = ramjet();
     otherwise
         type = 'turbojet';
